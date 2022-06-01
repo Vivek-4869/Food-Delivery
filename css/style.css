@@ -1,0 +1,463 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+      width:100vw;
+
+      height:100vh;
+
+      background:#F5F5F5;
+
+      scroll-behavior:smooth;
+
+      transition: scroll-behaviour 0.5s;
+
+}
+
+.container {
+
+      width:100%;
+
+      max-width:800px;
+
+      height:auto;
+
+      background:#F8F0F3;
+
+}
+
+/*navbar*/
+
+nav {
+
+     height:400px;
+
+     width:100vw;
+
+     background-image:url("../img/bg.jpeg");
+
+     overflow: hidden;
+
+}
+
+.navbar {
+
+	 width:100%;	 height:80px;
+
+	 background-color:rgba(70, 39, 11, 0.7);
+
+	 position:fixed;
+
+	 top:0;
+
+	 left:0;
+
+ }
+
+ 
+
+#logo {
+
+    height:50px;
+
+    width:50px;
+
+    border-radius:50%;
+
+    background:red;
+
+}
+
+ 
+
+ .heading {
+
+	 text-shadow:2px 3px 8px cyan;
+
+	 font-size:50px;
+
+	 font-family:Arial,sans-serif;
+
+	 font-weight:600;
+
+	 color:white;
+
+	 position:absolute;
+
+	 margin:auto;
+
+	 padding:10px;
+
+	 letter-spacing:1px;
+
+	 margin-left:50px;
+
+ }
+
+ 
+
+ .navbar ul {
+
+	 float:right;
+
+ }
+
+ 
+
+ .navbar ul li{
+
+	 display:inline-block;
+
+	 line-height:80px;
+
+	 margin:0 5px;
+
+ }
+
+ 
+
+ .navbar ul li a{
+
+	 color:white;
+
+	 text-transform:uppercase;
+
+	 font-size:22px;
+
+	 text-decoration:none;
+
+	 transition:0.3s ease;
+
+	 padding:10px;
+
+ }
+
+ 
+
+ .checkbtn{
+
+	 font-size:30px;
+
+	 color:black;
+
+	 cursor:pointer;
+
+	 float:right;
+
+	 margin-right:20px;
+
+	 line-height:80px;
+
+	 display:none;
+
+ }
+
+ 
+
+ #check {
+
+	 display:none;
+
+ }
+
+ 
+
+ nav .home {
+
+   background:transparent;
+
+   flex-direction:column;
+
+   margin-top:160px;
+
+   color:white;
+
+ }
+
+ 
+
+ .home h1 {
+
+   text-shadow:2px 3px 8px cyan;
+
+ 
+
+ }
+
+ 
+
+ .home button {
+
+    margin:10px;
+
+    border-radius:5px;
+
+    font-size:1.1rem;
+
+    border:solid 2px rgb(255, 255, 255);
+
+    background:rgba(255,255,255,0.5);
+
+    transition:all 0.5s;
+
+ }
+
+ 
+
+ .home button:hover {
+
+   background:black;
+
+   color:crimson;
+
+ 
+
+ }
+
+ .services {
+
+   height:auto;
+
+   width:100vw;
+
+   padding:5px;
+
+   margin:70px 0 30px 0;
+
+   display:flex;
+
+   flex-direction:column;
+
+ }
+
+ 
+
+ .services #container {
+
+   display:flex;
+
+   flex-direction:row;
+
+   width:100vw;
+
+   overflow:hidden;
+
+ }
+
+ 
+
+ 
+
+.services h1 {
+
+ text-align:center;
+
+ }
+
+ 
+
+ .services .cards {
+
+   border:solid 2px crimson;
+
+   border-radius:10px;
+
+   margin:5px;
+
+   height:auto;
+
+   width:330px;
+
+   padding:30px;
+
+   text-align:center;
+
+   background:#B3111212;
+
+ }
+
+ 
+
+ .cards img {
+
+    height:150px;
+
+    width:150px;
+
+    border-radius:50%;
+
+ }
+
+ 
+
+ .cards > img, h1, p {
+
+     margin:10px;
+
+ }
+
+ 
+
+ .container {
+
+   height:auto;
+
+   width:100vw;
+
+ }
+
+ 
+
+ .client {
+
+   background-image:url("../img/client.jpeg");
+
+   background-size:cover;
+
+   background-repeat:no-repeat;
+
+   background-position:center center;
+
+   height: 270px;
+
+   width:100vw;
+
+   margin: 50px 0;
+
+ }
+
+ 
+
+ .client h1 {
+
+     text-shadow: 3px 3px 5px cyan;
+
+ }
+
+ .form-container {
+
+    padding-left:15px;
+
+    background:url("../img/contact.jpeg");
+
+    background-position:center center;
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
+
+    height: auto;
+
+    width: 100vw;
+
+    margin: 10px 0 0 0;
+
+    
+
+ }
+
+ 
+
+ .form-container h1 {
+
+    text-align:center;
+
+    text-shadow: 3px 3px 5px cyan;
+
+ }
+
+ 
+
+ label{
+
+	 font-weight:bold;
+
+	 font-size:1.2rem;
+
+ }
+
+ 
+
+ input[type=text],input[type="e-mail"],textarea{
+
+	 border:none;
+
+	 outline:none;
+
+	 border-radius:0.5rem;
+
+	 width:90%;
+
+	 padding:0.3rem;
+
+	 font-size:1.3rem;
+
+	 margin-top: 6px;
+
+	 margin-bottom: 16px;
+
+	 
+
+ }
+
+ 
+
+ input[type=text]:focus  ,input[type="e-mail"]:focus ,textarea:focus {
+
+     box-shadow:var(--boxShadow);
+
+ 
+
+ }
+
+ 
+
+ 
+
+ 
+
+ input[type="submit"],input[type="reset"]{
+
+	 border:solid black 0.1rem;
+
+	 padding:0.3rem;
+
+	 border-radius:0.9rem;
+
+	 posiyion:relative;
+
+	 margin:5px;
+
+	 left:50%;
+
+	 font-weight:800;
+
+	 font-size:1rem;
+
+	 cursor:pointer;
+
+ }
+
+ 
+
+ input[type="submit"]:hover,,input[type="reset"]:hover{
+
+	 background:black;
+
+	 color:white;
+
+	 transition:0.3s ease;
+
+ }
+
+ 
+
+ 
